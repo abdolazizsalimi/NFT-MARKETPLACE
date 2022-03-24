@@ -13,15 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // hide status bar
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      SystemUiOverlayStyle.dark.copyWith(
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
       ),
-    ));
-    return MaterialApp(
+    );
+
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'nft app'.toUpperCase(),
-      home: const ProfilePage(),
+      title: 'NFT APP',
+      home: ProfilePage(),
     );
   }
 }
