@@ -5,7 +5,7 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       appBar: _buildAppBar(),
       body: Center(
@@ -18,9 +18,26 @@ class ProfilePage extends StatelessWidget {
     return AppBar(
       elevation: 0 /* no shadow */,
       backgroundColor: Colors.transparent,
-      leading: _buildIcon(),
+      leading: _buildIcon(
+        Icons.arrow_back_ios_new_outlined,
+      ),
+      actions: [
+        _buildIcon(
+          Icons.more_vert_outlined,
+        ),
+      ],
     );
   }
 }
 
-IconButton _buildIcon() {}
+IconButton _buildIcon(IconData icon) {
+  return IconButton(
+    onPressed: () {},
+    splashRadius: 25,
+    icon: Icon(
+      icon,
+      color: Colors.black,
+      size: 20,
+    ),
+  );
+}
