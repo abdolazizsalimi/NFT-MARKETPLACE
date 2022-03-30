@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:nft_app/models/profile.dart';
+import 'package:nft_app/screens/profile/widgets/custon_grid.dart';
 import 'package:nft_app/screens/profile/widgets/person_info.dart';
+import 'package:nft_app/screens/profile/widgets/tab_silver_delegate.dart';
 
 class ProfilePage extends StatelessWidget {
   final profile = Profile.generateProfile();
+  final tabs = ['Creations', 'Collections'];
   ProfilePage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -18,12 +21,36 @@ class ProfilePage extends StatelessWidget {
               SliverToBoxAdapter(
                 child: PersonInfo(profile),
               ),
+              SliverPersistentHeader(
+                delegate: TabSliverDelegate(
+                  TabBar(
+                    labelColor: Colors.black,
+                    unselectedLabelColor: Colors.grey[400],
+                    indicatorColor: Colors.black,
+                    tabs: tabs
+                        .map((e) => Tab(
+                              child: Text(e,
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                  )),
+                            ))
+                        .toList(),
+                  ),
+                ),
+                pinned: true,
+              ),
             ];
           },
-          body: const TabBarView(
+          body: TabBarView(
             children: [
-              Text('Collections'),
-              Text('Creations'),
+              CustomGrid(
+                'Creations',
+                profile.creations!,
+              ),
+              CustomGrid(
+                'Collections',
+                profile.collections!,
+              ),
             ],
           ),
         ),
