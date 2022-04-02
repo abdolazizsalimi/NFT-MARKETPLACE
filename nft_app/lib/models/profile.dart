@@ -19,32 +19,32 @@ class Profile {
 
   static Profile generateProfile() {
     return Profile(
-      imageUrl: 'avatar.png',
+      imageUrl: 'assets/images/avatar.png',
       name: 'Abdolaziz Salimi',
       email: 'aziz.s6882@gmail.com',
       twitter: '@abdolazizsalimi',
       description: 'the best artist ever',
       creations: [
         Art(
-          imgUrl: 'create1.jpeg',
+          imgUrl: 'assets/images/create1.jpeg',
           name: 'Art name',
           price: 100.0,
           description: '',
         ),
         Art(
-          imgUrl: 'create2.jepg',
+          imgUrl: 'assets/images/create2.jpeg',
           name: 'Art name',
           price: 100,
           description: '',
         ),
         Art(
-          imgUrl: 'create3.jpeg',
+          imgUrl: 'assets/images/create3.jpeg',
           name: 'Art name',
           price: 100,
           description: '',
         ),
         Art(
-          imgUrl: 'create4.jpeg',
+          imgUrl: 'assets/images/create4.jpeg',
           name: 'Art name',
           price: 100,
           description: '',
@@ -52,25 +52,25 @@ class Profile {
       ],
       collections: [
         Art(
-          imgUrl: 'collection1.jpeg',
+          imgUrl: 'assets/images/collection1.jpeg',
           name: 'Art name',
           price: 100,
           description: '',
         ),
         Art(
-          imgUrl: 'collection2.jpeg',
+          imgUrl: 'assets/images/collection2.jpeg',
           name: 'Art name',
           price: 100,
           description: '',
         ),
         Art(
-          imgUrl: 'collection3.jpeg',
+          imgUrl: 'assets/images/collection3.jpeg',
           name: 'Art name',
           price: 100,
           description: '',
         ),
         Art(
-          imgUrl: 'collection4.jpeg',
+          imgUrl: 'assets/images/collection4.jpeg',
           name: 'Art name',
           price: 100,
           description: '',

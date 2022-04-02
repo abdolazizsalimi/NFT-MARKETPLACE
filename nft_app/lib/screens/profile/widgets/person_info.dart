@@ -15,7 +15,7 @@ class PersonInfo extends StatelessWidget {
       child: Column(
         children: [
           CircleAvatar(
-            backgroundImage: NetworkImage(profile.imageUrl!),
+            foregroundImage: AssetImage(profile.imageUrl!),
             radius: 50,
           ),
           const SizedBox(height: 20),

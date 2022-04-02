@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:nft_app/models/art.dart';
-
-import '../../detail/widgets/detail.dart';
+import '../../detail/detail.dart';
 
 class CustomGrid extends StatelessWidget {
   final String scrollkey;
+  // ignore: non_constant_identifier_names
   final List<Art> ArtList;
   const CustomGrid(
     this.scrollkey,
@@ -28,7 +28,7 @@ class CustomGrid extends StatelessWidget {
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => DetailPage(),
+                builder: (context) => DetailPage(ArtList[index]),
               ),
             );
           },
@@ -37,11 +37,14 @@ class CustomGrid extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.network(
-                ArtList[index].imgUrl!,
-                fit: BoxFit.cover,
+            child: Hero(
+              tag: ArtList[index].imgUrl!,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  ArtList[index].imgUrl!,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
