@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nft_app/screens/detail/widgets/art_info.dart';
 import 'package:nft_app/screens/detail/widgets/detail_banner.dart';
 
 import '../../../models/art.dart';
@@ -43,6 +44,9 @@ class DetailPage extends StatelessWidget {
                 ),
                 pinned: true,
               ),
+              SliverToBoxAdapter(
+                child: ArtInfo(art),
+              )
             ];
           },
           body: Container(),

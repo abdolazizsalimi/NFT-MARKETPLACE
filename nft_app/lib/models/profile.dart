@@ -29,7 +29,7 @@ class Profile {
           imgUrl: 'assets/images/create1.jpeg',
           name: 'Art name',
           price: 100.0,
-          description: '',
+          description: 'the best art ever',
         ),
         Art(
           imgUrl: 'assets/images/create2.jpeg',
