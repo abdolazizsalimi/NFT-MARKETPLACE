@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+// pink colors
 
-const Color buttonColor = Color.fromARGB(0, 4, 102, 200);
+const Color buttonColor = Color(0xFFFFC0CB);
 
-const Color randomblue1 = Color.fromARGB(0, 3, 83, 164);
-const Color randomblue2 = Color.fromARGB(0, 2, 62, 125);
-const Color randomblue3 = Color.fromARGB(0, 0, 40, 85);
-const Color randomblue4 = Color.fromARGB(0, 0, 24, 69);
-const Color randomblue5 = Color.fromARGB(0, 0, 18, 51);
-const Color randomblue6 = Color.fromARGB(0, 51, 65, 92);
-const Color randomblue7 = Color.fromARGB(0, 92, 103, 125);
-const Color randomblue8 = Color.fromARGB(0, 125, 133, 151);
-const Color randomblue9 = Color.fromARGB(0, 151, 157, 172);
-const Color randomblue10 = Color.fromARGB(0, 124, 130, 133);
+const Color randomblue1 = Color(0XFFFCE4EC);
+const Color randomblue2 = Color(0XFFFCE4EC);
+const Color randomblue3 = Color(0XFFFCE4EC);
+const Color randomblue4 = Color(0XFFFCE4EC);
+const Color randomblue5 = Color(0XFFFCE4EC);
+const Color randomblue6 = Color(0XFFFCE4EC);
+const Color randomblue7 = Color(0XFFFCE4EC);
+const Color randomblue8 = Color(0XFFFCE4EC);
+const Color randomblue9 = Color(0XFFFCE4EC);
+const Color randomblue10 = Color(0XFFFCE4EC);
 
 const randomBlueList = [
   randomblue1,
