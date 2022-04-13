@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nft_app/screens/auth/LoginForm.dart';
 import 'package:nft_app/screens/profile/profile.dart';
 
 void main() {
@@ -19,10 +20,10 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'NFT APP',
-      home: ProfilePage(),
+      title: 'NFT Marketplace',
+      home: LoginForm(),
     );
   }
 }
